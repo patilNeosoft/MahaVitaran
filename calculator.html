@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="icon" href="images/bulb.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+    <title>calculate bill</title>
+    <style>
+        div {
+            background-color: rgb(215, 255, 255);
+          
+            box-shadow: 10px 10px 10px rgb(102, 225, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            position: relative;
+            width: 100%;
+            border-radius: 40px
+        }
+
+        button {
+            height: 50px;
+            width: 140px;
+
+        }
+ img {
+            height: 300px;
+            width: 500px;
+            padding: 15px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="ul">
+          <li id="heading">Mahavitaran</li>
+          <li><a href="home.html" class="material-symbols-outlined" style="font-size: 30px;">home</a></li>
+          <li><a href="home.html">home</a></li>
+          <li><a href="calculator.html" class="material-symbols-outlined" style="font-size: 30px;">calculate</a></li>
+          <li><a href="calculator.html">Bill calculator</a></li>
+          <li><a href="submit reading.html" class="material-symbols-outlined" style="font-size: 30px;">fact_check</a></li>
+          <li><a href="submit reading.html">Submit reading</a></li>
+          <li><a href="contact.html" class="material-symbols-outlined" style="font-size: 30px;">phone_in_talk</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="material-symbols-outlined" style="font-size: 30px;">logout</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    <h1>Bill calculator</h1>
+    <div>
+        <img src="images/calculate.jpg">
+        <form>
+            <label>Enter units : </label><input id="myInput" type="number" value="">
+            <p>approximate bill amount for month is : </p>
+            <h3 id="op"></h3>
+        </form>
+    </div><br>
+ <button onclick="calc()">calculate</button> 
+ <footer>
+    <li>Mail</li>
+    <li>About Us</li>
+    <li>Services</li>
+    <li>Help</li>
+  </footer>
+
+    <script src="amount.js"></script>
+</body>
+
+</html>
