@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="icon" href="./images/bulb.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <title>Contact</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        div {
+            background-color: rgb(215, 255, 255);
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        figure {
+            height: 400px;
+            width: 300px;
+        }
+
+        #outer {
+            display: flex;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="ul">
+          <li id="heading">Mahavitaran</li>
+          <li><a href="home.html" class="material-symbols-outlined" style="font-size: 30px;">home</a></li>
+          <li><a href="home.html">home</a></li>
+          <li><a href="calculator.html" class="material-symbols-outlined" style="font-size: 30px;">calculate</a></li>
+          <li><a href="calculator.html">Bill calculator</a></li>
+          <li><a href="submit reading.html" class="material-symbols-outlined" style="font-size: 30px;">fact_check</a></li>
+          <li><a href="submit reading.html">Submit reading</a></li>
+          <li><a href="contact.html" class="material-symbols-outlined" style="font-size: 30px;">phone_in_talk</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="material-symbols-outlined" style="font-size: 30px;">logout</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    <div id="outer">
+        <figure><img src="/images/contact.jpg">
+            <figcaption>
+                <h4>Customer care number:1800-102-3435</h4>
+            </figcaption>
+        </figure>
+
+ <div class="form">
+            <h2>Feedback</h2>
+            <form onsubmit="success()">
+                <table>
+                    <tr>
+                        <td>Enter your name  </td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your feedback </td>
+                        <td><textarea required></textarea></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="form">
+            <h2>complaint</h2>
+            <form onsubmit="success()">
+
+                <table>
+
+                    <tr>
+                        <td>Enter your name </td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your billing unit  </td>
+                        <td><input id="billing" required ></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your meter number </td>
+                        <td><input  id="meter" type="number" required></td>
+                    </tr>
+                    <tr>
+                        <td>Write your complaint </td>
+                        <td><input id="complaint" required></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td><button>submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div><br>
+    <footer>
+        <li>Mail</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Help</li>
+    </footer>
+
+    <script>
+        function success() {
+            alert('you have submitted the form successfully');
+        }
+</script>
+</body>
+</html>
